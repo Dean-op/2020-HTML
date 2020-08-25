@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;
+padding: 0;
+}
+
+.box1{
+	margin-top: 10vh;
+	margin-left: 60vh;
+	height: 400px;
+	width: 600px;
+	background-color: cadetblue;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.box1 span{
+	height: 40px;
+	width: 40px;
+	background-color: crimson;
+	border: 1px solid ;
+	border-radius: 40%;
+	text-align:center;
+	margin:50px;
+
+}

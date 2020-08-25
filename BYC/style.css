@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	background-image:url(./images/DKJ/A2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+}
+.main{/*可见区域尺寸及效果*/
+	width: 805px;
+	height:365px;
+	margin: 150px 25vw;
+	overflow: hidden;
+}
+li{/*图片的尺寸及效果，160px*5=800px，而800px<805px，再加上每个图片的左边框占据1px，所以800+5=805*/
+	width: 160px;
+	float: left;
+	border-left: 1px double #fff;
+	position: relative;/*给li属性一个定位，给下面的absolu做参考作用*/
+	transition: 1s;
+}
+.text{
+	position: absolute;
+	bottom: 3px;
+	left: 0px;
+
+	width: 100%;/*width和height属性确切来说，所作用并非背景，而是文字，是背景同步文字的宽高效果*/
+	height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	background: rgba(0,0,0,0.5);
+}
+.main:hover li{/*当鼠标划到.main中，li缩小为40px（li的宽设定为160px）过大会挤出第五张图，过小会导致第五张图文字BG较短*/
+	width: 40px;
+}
+.main li:hover{/*在main中，鼠标具体划到哪一个li时，哪一个li就变成640px(设定为158px)；*/
+	width: 640px;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(45deg,#CC00CC,#33CCFF,#FF6699,#33CCCC,#00ff00);/*45°倾斜*/
+	background-size: 400%;
+	animation: gradientBG 20s ease infinite;/*命名，持续时间，缓慢的，无限播放*/
+}
+h1{
+	text-align: center;
+	color: white;
+}
+@keyframes gradientBG{
+	1%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
